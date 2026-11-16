@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Achuu ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 30px;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 38px;
+  animation: glow 2s infinite alternate;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+button {
+  background: white;
+  color: #ff4f81;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#surprise {
+  display: none;
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.heart {
+  font-size: 55px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.3); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px white; }
+  to { text-shadow: 0 0 25px white; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="heart">❤️</div>
+
+<h1>Happy Birthday Achuu! 🎂</h1>
+
+<p>
+Today is your special day! 🥰
+May your life always be filled with
+happiness, love, laughter and beautiful memories.
+</p>
+
+<button onclick="showSurprise()">
+Open Your Surprise 🎁
+</button>
+
+<div id="surprise">
+<h2>🎉 You Are Special! ❤️</h2>
+<p>
+Wishing you endless smiles,
+unforgettable moments and all
+the happiness in the world!
+</p>
+<p>Stay happy always! 💖</p>
+</div>
+
+</div>
+
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
